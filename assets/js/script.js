@@ -114,6 +114,17 @@
     });
   }
 
+  /* ---------------- Hero background video ---------------- */
+  const heroVideo = document.querySelector('.hero-bg-video');
+  if (heroVideo) {
+    if (reduceMotion) {
+      heroVideo.removeAttribute('autoplay');
+      heroVideo.pause();
+    } else {
+      heroVideo.play().catch(() => {});
+    }
+  }
+
   /* ---------------- Circuit background pulses ---------------- */
   const circuitSvg = document.querySelector('.circuit-bg');
   if (circuitSvg && reduceMotion && typeof circuitSvg.pauseAnimations === 'function') {
