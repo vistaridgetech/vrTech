@@ -125,6 +125,54 @@
 
   <!-- ===================== SYLLABI ===================== -->
   <section class="section syllabi" id="syllabi">
+    <svg class="circuit-bg" viewBox="0 0 1200 900" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <defs>
+        <filter id="circuitGlow" x="-200%" y="-200%" width="500%" height="500%">
+          <feGaussianBlur stdDeviation="3" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+
+      <g class="circuit-traces" fill="none" stroke-width="1.6">
+        <path id="ct-p1" d="M-20,110 H240 V30 H520 V240 H780 V90 H1040 V320 H1220"/>
+        <path id="ct-p2" d="M-20,360 H180 V500 H440 V320 H720 V540 H980 V400 H1220"/>
+        <path id="ct-p3" d="M120,-20 V200 H360 V440 H160 V920"/>
+        <path id="ct-p4" d="M1080,-20 V180 H840 V420 H1060 V920"/>
+        <path id="ct-p5" d="M-20,640 H240 V760 H60 V920"/>
+        <path id="ct-p6" d="M960,700 H1220 M960,700 V860 H1140"/>
+        <path id="ct-p7" d="M420,600 H700 V740 H900"/>
+      </g>
+
+      <g class="circuit-pads">
+        <circle cx="240" cy="110" r="4"/><circle cx="240" cy="30" r="4"/><circle cx="520" cy="30" r="4"/>
+        <circle cx="520" cy="240" r="4"/><circle cx="780" cy="240" r="4"/><circle cx="780" cy="90" r="4"/>
+        <circle cx="1040" cy="90" r="4"/><circle cx="1040" cy="320" r="4"/>
+        <circle cx="180" cy="360" r="4"/><circle cx="180" cy="500" r="4"/><circle cx="440" cy="500" r="4"/>
+        <circle cx="440" cy="320" r="4"/><circle cx="720" cy="320" r="4"/><circle cx="720" cy="540" r="4"/>
+        <circle cx="980" cy="540" r="4"/><circle cx="980" cy="400" r="4"/>
+        <circle cx="120" cy="200" r="4"/><circle cx="360" cy="200" r="4"/><circle cx="360" cy="440" r="4"/>
+        <circle cx="160" cy="440" r="4"/>
+        <circle cx="1080" cy="180" r="4"/><circle cx="840" cy="180" r="4"/><circle cx="840" cy="420" r="4"/>
+        <circle cx="1060" cy="420" r="4"/>
+        <circle cx="240" cy="640" r="4"/><circle cx="240" cy="760" r="4"/><circle cx="60" cy="760" r="4"/>
+        <circle cx="960" cy="700" r="4"/><circle cx="960" cy="860" r="4"/><circle cx="1140" cy="860" r="4"/>
+        <circle cx="420" cy="600" r="4"/><circle cx="700" cy="600" r="4"/><circle cx="700" cy="740" r="4"/>
+      </g>
+
+      <g class="circuit-pulses" filter="url(#circuitGlow)">
+        <circle r="3.2" class="pulse"><animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath href="#ct-p1"/></animateMotion></circle>
+        <circle r="3.2" class="pulse"><animateMotion dur="9s" repeatCount="indefinite" rotate="auto" begin="-2s"><mpath href="#ct-p2"/></animateMotion></circle>
+        <circle r="3.2" class="pulse"><animateMotion dur="6.5s" repeatCount="indefinite" rotate="auto" begin="-1s"><mpath href="#ct-p3"/></animateMotion></circle>
+        <circle r="3.2" class="pulse"><animateMotion dur="8s" repeatCount="indefinite" rotate="auto" begin="-4s"><mpath href="#ct-p4"/></animateMotion></circle>
+        <circle r="3.2" class="pulse"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto"><mpath href="#ct-p5"/></animateMotion></circle>
+        <circle r="3.2" class="pulse"><animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto" begin="-3s"><mpath href="#ct-p6"/></animateMotion></circle>
+        <circle r="3.2" class="pulse"><animateMotion dur="5s" repeatCount="indefinite" rotate="auto" begin="-2.5s"><mpath href="#ct-p7"/></animateMotion></circle>
+      </g>
+    </svg>
+
     <div class="section-head">
       <p class="kicker reveal-up"><span class="dot"></span> COURSE CATALOG</p>
       <h2 class="section-title reveal-up">Find Your <span class="accent">Syllabus</span></h2>

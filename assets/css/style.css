@@ -255,6 +255,31 @@ a { color: inherit; text-decoration: none; }
 @keyframes cueMove { 0%,100% { transform: scaleY(1); opacity: .4; } 50% { transform: scaleY(1); opacity: 1; } }
 
 /* ==========================================================================
+   SYLLABI — animated red circuit-board background
+   ========================================================================== */
+.syllabi { position: relative; overflow: hidden; }
+.circuit-bg {
+  position: absolute; inset: -5% -5%; width: 110%; height: 110%; z-index: 0;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 85% 75% at 50% 45%, black 45%, transparent 92%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 75% at 50% 45%, black 45%, transparent 92%);
+  animation: circuitDrift 34s ease-in-out infinite alternate;
+}
+@keyframes circuitDrift {
+  from { transform: translate(-1.2%, -0.8%) scale(1.02); }
+  to   { transform: translate(1.2%, 0.8%) scale(1.02); }
+}
+.circuit-traces path { stroke: var(--red); opacity: 0.16; }
+.circuit-pads circle { fill: var(--red); opacity: 0.22; }
+.circuit-pulses .pulse { fill: var(--red-bright); opacity: 0.95; }
+
+.syllabi .section-head, .syllabi .card-grid { position: relative; z-index: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .circuit-bg { animation: none; }
+}
+
+/* ==========================================================================
    STATS STRIP
    ========================================================================== */
 .stats-strip {

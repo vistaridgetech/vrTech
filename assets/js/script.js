@@ -114,6 +114,12 @@
     });
   }
 
+  /* ---------------- Circuit background pulses ---------------- */
+  const circuitSvg = document.querySelector('.circuit-bg');
+  if (circuitSvg && reduceMotion && typeof circuitSvg.pauseAnimations === 'function') {
+    circuitSvg.pauseAnimations();
+  }
+
   /* ---------------- Marquee pause on hover ---------------- */
   document.querySelectorAll('.marquee-track').forEach(track => {
     track.addEventListener('mouseenter', () => { track.style.animationPlayState = 'paused'; });
