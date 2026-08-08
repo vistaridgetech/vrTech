@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech at The Ridge | Vista Ridge High School Computer Science</title>
+<meta name="description" content="Computer Science, Cybersecurity, and Money Matters at Vista Ridge High School. Find your syllabus and see where future innovators thrive.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-text">TECH <em>at</em> THE RIDGE</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="navList">
+        <li><a href="#top" class="nav-link">Home</a></li>
+        <li><a href="#syllabi" class="nav-link">Syllabi</a></li>
+        <li><a href="#pathways" class="nav-link">Pathways</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('assets/images/hero-bg.jpg')" data-parallax="0.25"></div>
+    <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-scan" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal-up"><span class="dot"></span> VISTA RIDGE HIGH SCHOOL &middot; LEANDER ISD</p>
+
+      <h1 class="hero-title" data-text="TECH AT THE RIDGE">
+        <span class="glitch-wrap">
+          <span class="glitch-layer" aria-hidden="true">TECH AT THE RIDGE</span>
+          <span class="glitch-layer" aria-hidden="true">TECH AT THE RIDGE</span>
+          <span class="glitch-main">TECH AT THE RIDGE</span>
+        </span>
+      </h1>
+
+      <p class="hero-sub reveal-up" style="--d:0.15s">Where future innovators thrive.</p>
+
+      <div class="hero-actions reveal-up" style="--d:0.3s">
+        <a href="#syllabi" class="btn btn-primary">
+          <span>Find A Syllabus</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#pathways" class="btn btn-ghost"><span>Explore Pathways</span></a>
+      </div>
+    </div>
+
+    <div class="marquee reveal-up" style="--d:0.45s" aria-label="Course tracks">
+      <div class="marquee-track">
+        <span>Computer Science</span><span class="sep">&#9670;</span>
+        <span>Cybersecurity</span><span class="sep">&#9670;</span>
+        <span>Money Matters</span><span class="sep">&#9670;</span>
+        <span>Computer Science</span><span class="sep">&#9670;</span>
+        <span>Cybersecurity</span><span class="sep">&#9670;</span>
+        <span>Money Matters</span><span class="sep">&#9670;</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span>Computer Science</span><span class="sep">&#9670;</span>
+        <span>Cybersecurity</span><span class="sep">&#9670;</span>
+        <span>Money Matters</span><span class="sep">&#9670;</span>
+        <span>Computer Science</span><span class="sep">&#9670;</span>
+        <span>Cybersecurity</span><span class="sep">&#9670;</span>
+        <span>Money Matters</span><span class="sep">&#9670;</span>
+      </div>
+    </div>
+
+    <a href="#syllabi" class="scroll-cue" aria-label="Scroll down">
+      <span class="scroll-cue-line"></span>SCROLL
+    </a>
+  </section>
+
+  <!-- ===================== STATS STRIP ===================== -->
+  <section class="stats-strip reveal-up">
+    <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Courses Offered</span></div>
+    <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Career Pathways</span></div>
+    <div class="stat"><span class="stat-num" data-count="1">0</span><span class="stat-label">Industry Certification&nbsp;(Security+)</span></div>
+    <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Capstone / Practicum Credits</span></div>
+  </section>
+
+  <!-- ===================== SYLLABI ===================== -->
+  <section class="section syllabi" id="syllabi">
+    <div class="section-head">
+      <p class="kicker reveal-up"><span class="dot"></span> COURSE CATALOG</p>
+      <h2 class="section-title reveal-up">Find Your <span class="accent">Syllabus</span></h2>
+      <p class="section-desc reveal-up">To access the syllabus for a class, click the corresponding button below. There you'll find the necessary information regarding course outlines, objectives, and important dates.</p>
+    </div>
+
+    <div class="card-grid">
+
+      <article class="course-card tilt" data-track="Computer Science">
+        <div class="card-media">
+          <img src="assets/images/card-cs1.jpg" alt="Abstract illustration representing coding and computer science" loading="lazy">
+          <span class="card-tag">Computer Science</span>
+        </div>
+        <div class="card-body">
+          <h3>Computer Science 1 Advanced</h3>
+          <p>Learn to think in logic and build things that run. This survey course takes you from visual programming tools to real languages, covering data types, conditionals, loops, arrays, functions, and object-oriented design along the way. You will spend the year solving problems by hand and in code, building the foundation for AP Computer Science A. Whether or not you continue in the sequence, you leave knowing how software actually works.</p>
+          <a class="card-link" href="syllabi/computer-science-1-advanced.pdf" target="_blank" rel="noopener">
+            <span>Syllabus</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="course-card tilt" data-track="Cybersecurity">
+        <div class="card-media">
+          <img src="assets/images/card-cyberfound.jpg" alt="Abstract illustration representing network security" loading="lazy">
+          <span class="card-tag">Cybersecurity</span>
+        </div>
+        <div class="card-body">
+          <h3>Foundations of Cybersecurity</h3>
+          <p>Learn how systems get broken, and how they get defended. This yearlong course covers implementing and monitoring security across networks and computer systems, identifying real threats like hackers, eavesdropping, and network attacks, and the ethics and laws that govern them. Every unit connects to something happening in the news right now. It's the first step toward CompTIA Security+ and the entry point to the cybersecurity pathway.</p>
+          <a class="card-link" href="syllabi/foundations-of-cybersecurity.pdf" target="_blank" rel="noopener">
+            <span>Syllabus</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="course-card tilt" data-track="Cybersecurity">
+        <div class="card-media">
+          <img src="assets/images/card-cybercap.jpg" alt="Abstract illustration representing a security terminal and command line" loading="lazy">
+          <span class="card-tag">Cybersecurity</span>
+        </div>
+        <div class="card-body">
+          <h3>Cybersecurity Capstone</h3>
+          <p>Go deep and get certified. Capstone moves you into cyber law and policy, command line interfaces, Linux, networking technology, risk assessment, cryptography, and the tools professionals actually use. You practice a wide range of skills in a safe environment while building the historical context behind the field, and you finish the year prepared to sit for the CompTIA Security+ certification exam.</p>
+          <a class="card-link" href="syllabi/cybersecurity-capstone.pdf" target="_blank" rel="noopener">
+            <span>Syllabus</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="course-card tilt" data-track="Cybersecurity">
+        <div class="card-media">
+          <img src="assets/images/card-practicum.jpg" alt="Abstract illustration representing professional workplace experience" loading="lazy">
+          <span class="card-tag">Cybersecurity</span>
+        </div>
+        <div class="card-body">
+          <h3>Practicum in Cybersecurity</h3>
+          <p>Do the work for real. This two-credit capstone allows you to develop your skills at an approved training site under supervision. You get to apply everything you built across the pathway where real people depend on it being done right. You'll explore cybersecurity careers, college programs, and assemble a professional portfolio. Confidentiality, conduct, and follow-through are part of the grade, because in this field they're part of the job.</p>
+          <a class="card-link" href="syllabi/practicum-in-cybersecurity.pdf" target="_blank" rel="noopener">
+            <span>Syllabus</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="course-card tilt" data-track="Money Matters">
+        <div class="card-media">
+          <img src="assets/images/card-money.jpg" alt="Abstract illustration representing personal finance and growth" loading="lazy">
+          <span class="card-tag">Money Matters</span>
+        </div>
+        <div class="card-body">
+          <h3>Money Matters</h3>
+          <p>Money Matters is the class where the math finally has your name on it. You'll analyze real financial decisions against real economic conditions: what to do with a paycheck, how debt actually works, when to start investing, and how to build a plan that holds up over decades. The course covers banking, income, saving, insurance, budgeting, consumer skills, career planning, and the economics behind private enterprise, then puts it to work on the goals you set for yourself. Students in this class are also eligible to join DECA and compete at the district, state, and international level.</p>
+          <a class="card-link" href="syllabi/money-matters.pdf" target="_blank" rel="noopener">
+            <span>Syllabus</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== PATHWAYS / PARALLAX ===================== -->
+  <section class="section pathways" id="pathways">
+    <div class="parallax-wrap">
+      <div class="parallax-layer layer-back" data-parallax="0.15" aria-hidden="true"></div>
+      <div class="parallax-layer layer-grid" data-parallax="0.35" aria-hidden="true"></div>
+
+      <div class="section-head">
+        <p class="kicker reveal-up"><span class="dot"></span> WHERE THIS LEADS</p>
+        <h2 class="section-title reveal-up">Three Pathways. <span class="accent">One Ridge.</span></h2>
+        <p class="section-desc reveal-up">Every course connects to what comes next &mdash; a certification, a portfolio, a competition, or a decision that pays off for the rest of your life.</p>
+      </div>
+
+      <div class="pathway-grid">
+        <div class="pathway-card reveal-up">
+          <span class="pathway-icon">&#128187;</span>
+          <h3>Computer Science</h3>
+          <p>From visual programming to object-oriented design &mdash; the foundation for AP Computer Science A and beyond.</p>
+        </div>
+        <div class="pathway-card reveal-up" style="--d:0.1s">
+          <span class="pathway-icon">&#128274;</span>
+          <h3>Cybersecurity</h3>
+          <p>Foundations &rarr; Capstone &rarr; Practicum. A direct line to CompTIA Security+ and real-world placement.</p>
+        </div>
+        <div class="pathway-card reveal-up" style="--d:0.2s">
+          <span class="pathway-icon">&#128200;</span>
+          <h3>Money Matters</h3>
+          <p>Banking, budgeting, and investing &mdash; plus eligibility to compete with DECA at the district, state, and international level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta reveal-up">
+    <h2>Ready to build something that runs?</h2>
+    <p>Pick your track above, grab the syllabus, and see where it takes you.</p>
+    <a href="#syllabi" class="btn btn-primary"><span>Find A Syllabus</span></a>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-text">TECH <em>at</em> THE RIDGE</span>
+      </a>
+      <p class="footer-tagline">Empowering the Future</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><a href="mailto:tony.morales@leanderisd.org">tony.morales@leanderisd.org</a></p>
+      <p>200 S Vista Ridge Blvd<br>Cedar Park, TX 78613</p>
+      <p><a href="https://vrhs.leanderisd.org/home" target="_blank" rel="noopener">vrhs.leanderisd.org &#8599;</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Syllabi</h4>
+      <p><a href="syllabi/computer-science-1-advanced.pdf" target="_blank" rel="noopener">Computer Science 1 Advanced</a></p>
+      <p><a href="syllabi/foundations-of-cybersecurity.pdf" target="_blank" rel="noopener">Foundations of Cybersecurity</a></p>
+      <p><a href="syllabi/cybersecurity-capstone.pdf" target="_blank" rel="noopener">Cybersecurity Capstone</a></p>
+      <p><a href="syllabi/practicum-in-cybersecurity.pdf" target="_blank" rel="noopener">Practicum in Cybersecurity</a></p>
+      <p><a href="syllabi/money-matters.pdf" target="_blank" rel="noopener">Money Matters</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Accessibility</h4>
+      <p><a href="https://docs.google.com/document/d/1fKVycm0sQtuzdBVqrDwcnTJkJobcYOzC_RhLCTsPzgA/edit?tab=t.0#bookmark=kix.pem114shxwe" target="_blank" rel="noopener">Espa&ntilde;ol (Spanish)</a></p>
+      <p><a href="https://docs.google.com/document/d/1fKVycm0sQtuzdBVqrDwcnTJkJobcYOzC_RhLCTsPzgA/edit?tab=t.0#bookmark=kix.d7w11rv84h5l" target="_blank" rel="noopener">&#3108;&#3142;&#3122;&#3137;&#3095;&#3137; (Telugu)</a></p>
+    </div>
+  </div>
+
+  <div class="footer-legal">
+    <p>Leander ISD does not discriminate on the basis of race, color, national origin, sex, or disability in its programs or activities and provides equal access to the Boy Scouts and other designated youth groups. The following person has been designated to handle inquiries regarding the nondiscrimination policies: Bryan Miller, Title IX Coordinator; 204 W. South Street Leander, TX 78646; <a href="mailto:Bryan.Miller@Leanderisd.org">Bryan.Miller@Leanderisd.org</a>; (512) 570-0000.</p>
+    <p>**We are compliant with all Vista Ridge grading practices and LISD Grading Guidelines</p>
+    <p class="copyright">&copy; 2026 Tony Morales</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
