@@ -127,7 +127,7 @@
     let particles = [];
     let w, h, dpr;
 
-    const palette = ['#5be9ff', '#8b6bff', '#ff5bd0'];
+    const palette = ['#e4142b', '#cdd1d7', '#8a8f98'];
 
     const resize = () => {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
